@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Manager</title>
+</head>
+<body>
+
+<h1>📚 Student Management System</h1>
+
+<a href="/add">➕ Add Student</a>
+
+<hr>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Course</th>
+</tr>
+
+{% for s in students %}
+<tr>
+    <td>{{s[0]}}</td>
+    <td>{{s[1]}}</td>
+    <td>{{s[2]}}</td>
+    <td>{{s[3]}}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>
